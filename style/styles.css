@@ -75,7 +75,7 @@ ul li:hover:before{
 .mainproj{
     display: flex;
     margin-top: 34px;
-    gap: 70px;
+    gap: 50px;
     justify-content: center;
     margin-bottom: 120px;
 }
@@ -136,9 +136,14 @@ button{
     left: 0;
     bottom: 0;
 }
+.nurtownimg{
+    
+    max-width: 770px;
+    height: 700px;
+}
 .mainprojimg{
-    background-image: url(./assets/Rectangle\ 6.png);
-    width: 760px;
+    max-width: 760px;
+    width: 100%;
     height: 630px;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,6 +194,21 @@ button{
     padding-top: 20px;
     line-height: 25px;
 }
+/* ----------------------burgber------------------------ */
+
+.burgerbar{
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+
 .comptext a{
     background-color: rgb(255, 255, 255);
     opacity: 0.9;
@@ -330,3 +350,24 @@ footer{
     columns: #C8C8C880;
     opacity: 0.5;
 }
+/* ------go up----------- */
+
+  
+  #scrollToTop {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0,0.5);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    font-family: "Arial";
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -12rem;
+    transition: margin-bottom 0.2s;
+     & .active {
+      margin-bottom: 0;
+    }
+  }
