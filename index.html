@@ -47,19 +47,9 @@
               <p class="light">project</p>
               <p class="bold">nurtown</p>
             </div>
-            <div class="prevnext">
-              <button class="prev">&#8592;</button>
-              <button class="next">&#8594;</button>
-            </div>
-            <div class="numeration">
-              <p>01</p>
-              <p>/</p>
-              <p>02</p>
-            </div>
           </div>
           <div class="mainprojimg">
             <img class="nurtownimg" src="./style/assets/Rectangle 6.png" alt="img">
-            <a href="#" class="cont">Continue &#8594;</a>
           </div>
         </div>
       </section>
@@ -69,24 +59,22 @@
             <img src="./style/assets/Rectangle 8.png" alt="#" class="comppic1" />
             <img src="./style/assets/Rectangle 9.png" alt="#" class="comppic2" />
             <img src="./style/assets/Rectangle 10 (3).png" alt="#" class="comppic3" />
+            
           </div>
           <div class="comptext">
             <h2>about company</h2>
-            <p class="about-p">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <a href="#">Continue &#8594;</a>
+            <div class="accordion-wraper">
+              <button class="accordion">Click to read</button>
+              <div class="panel">
+                <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, But Also The Leap Into Electronic Typesetting, Remaining Essentially Unchanged..</p>
+              </div>
+            </div>
         </div>
       </div>
       </section>
       <section>
         <div class="ourproj">
-          <h2>Our projects</h2>
+          <h2 class="our-h">Our projects</h2>
           <div class="ourprojpic">
             <img class="ourprojpic1" src="./style/assets/Rectangle 12.png" alt="img" />
             <img class="ourprojpic1" src="./style/assets/image 15.png" alt="img" />
@@ -94,7 +82,32 @@
             <img class="ourprojpic1" src="./style/assets/image 17.png" alt="img" />
             <img class="ourprojpic1" src="./style/assets/image 18.png" alt="img " />
           </div>
-          <a href="#">Continue &#8594;</a>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img class="ourprojpic1" src="./style/assets/Rectangle 12.png" alt="img" />
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img class="ourprojpic1" src="./style/assets/image 15.png" alt="img" />
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img class="ourprojpic1" src="./style/assets/image 17.png" alt="img" />
+            </div>
+            
+            </div>
+            
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
         </div>
       </section>
       <section>
@@ -102,35 +115,34 @@
           <h2>contact us</h2>
           <div class="contact">
             <div class="contactleft">
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input
-                type="text"
-                name="number"
-                id="number"
-                placeholder="Phone number"
-              />
-              <input type="mail" name="mail" id="mail" placeholder="Mail" />
-              <input
-                type="text"
-                name="product"
-                id="product"
-                placeholder="Product"
-              />
-              <textarea
-                name="comment"
-                id="com"
-                cols="30"
-                rows="10"
-                placeholder="Comment"
-              ></textarea>
+              <form action="">
+                <input type="text" name="name" id="Name" placeholder="Name" />
+                <input
+                  type="text"
+                  name="number"
+                  id="phone"
+                  placeholder="Phone number"
+                />
+                <input type="mail" name="mail" id="mail" placeholder="Mail" />
+                <textarea
+                  name="comment"
+                  id="massage"
+                  cols="30"
+                  rows="10"
+                  placeholder="Comment"
+                ></textarea>
+                  <input type="submit" id="submit">
+              </form>
             </div>
             <div class="contactright">
               <img class="contactimg" src="./style/assets/image 12.png" alt="" />
             </div>
           </div>
-          <p>you must agree with the website policy during the registration</p>
-          <a href="#">Continue &#8594;</a>
         </div> 
+        <div class="scroll">
+          <button class="scrollToTopBtn">☝️</button>
+        </div>
+        
       </section>
     </main>
     <footer>
@@ -163,7 +175,7 @@
       <div class="footerbottom">
         <div class="footerline"></div>
         <p>© 2022 Digital Project. By Beka Bantsadze</p>
-      </div>
+      </div>  
     </footer>
     <div id="scrollToTop">
       <span>Go Up</span>
