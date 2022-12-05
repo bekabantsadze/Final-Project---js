@@ -29,16 +29,24 @@
           <li><a href="#">Main</a></li>
           <li><a href="#">Gallery</a></li>
           <li><a href="#">Project</a></li>
-          <li><a href="#">Certificate</a></li>
           <li><a href="#">Contact</a></li>
         </ul> 
       </nav>
       <div class="sign-button">
         <a href="./login.html" class="button" id="button">Sign In</a>
         </div>
-      <div class="burgerbar" id="togglebar">
-        <i class="fa-solid fa-bars"></i>
       </div>
+      <div class="burgernavigation">
+        <ul class="menu">
+          <li><a class="menuItem" href="#">Home</a></li>
+          <li><a class="menuItem" href="#">Profile</a></li>
+          <li><a class="menuItem" href="#">About</a></li>
+          <li><a class="menuItem" href="#">Contacts</a></li>
+        </ul>
+        <button class="hamburger">
+          <i class="menuIcon material-icons"><i class="fa-solid fa-bars"></i></i>
+          <i class="closeIcon material-icons"><i class="fa-solid fa-xmark"></i></i>
+        </button>
       </div>
 
 
@@ -66,7 +74,7 @@
             
           </div>
           <div class="comptext">
-            <h2>about company</h2>
+            <h2 class="about-h">about company</h2>
             <div class="accordion-wraper">
               <button class="accordion">Click to read</button>
               <div class="panel">
@@ -80,27 +88,39 @@
         <div class="ourproj">
           <h2 class="our-h">Our projects</h2>
           <div class="ourprojpic">
-            <img class="ourprojpic1" src="./style/assets/Rectangle 12.png" alt="img" />
+
             <img class="ourprojpic1" src="./style/assets/image 15.png" alt="img" />
-            <img class="ourprojpic1" src="./style/assets/image 16.png" alt="img" />
             <img class="ourprojpic1" src="./style/assets/image 17.png" alt="img" />
             <img class="ourprojpic1" src="./style/assets/image 18.png" alt="img " />
           </div>
           <div class="slideshow-container">
 
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img class="ourprojpic1" src="./style/assets/Rectangle 12.png" alt="img" />
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img class="ourprojpic1" src="./style/assets/image 15.png" alt="img" />
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img class="ourprojpic1" src="./style/assets/image 17.png" alt="img" />
+            <div class="container">
+              <div class="slider">
+                <div class="slider__slides">
+                  <div class="slider__slide active">
+                    <img class="ourprojpic1" src="./style/assets/Rectangle 12.png" alt="img" />
+                  </div>
+                  <div class="slider__slide">
+                    <img class="ourprojpic1" src="./style/assets/image 15.png" alt="img" />
+                  </div>
+                  <div class="slider__slide">
+                    <img class="ourprojpic1" src="./style/assets/image 16.png" alt="img" />
+                  </div>
+                  <div class="slider__slide">
+                    <img class="ourprojpic1" src="./style/assets/image 17.png" alt="img" />
+                  </div>
+                  
+                </div>
+                <div id="nav-button--prev" class="slider__nav-button"></div>
+                <div id="nav-button--next" class="slider__nav-button"></div>
+                <div class="slider__nav">
+                  <div class="slider__navlink active"></div>
+                  <div class="slider__navlink"></div>
+                  <div class="slider__navlink"></div>
+                  <div class="slider__navlink"></div>
+                </div>
+              </div>
             </div>
             
             </div>

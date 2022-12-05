@@ -13,13 +13,35 @@
         
     }
     .ourprojpic1{
-        max-width: 350px;
-        max-height: 255px;
+        max-width: 500px;
+        max-height: 450px;
     }
     .contactimg{
         max-width: 550px;
         max-height: 255px;
         margin-left: 25px;
+    }
+}
+@media (max-width:1100px){
+    .comptext{
+        font-size:15px;
+    }
+    .comptext h2{
+        font-size: 50px;
+    }
+    .nurtownimg{
+        width: 550px;
+        height: 550px;
+    }
+}
+@media (max-width:1190px){
+    .slideshow-container{
+        display: none;
+    }
+    .ourprojpic{
+        display: block;
+        max-width: 400px;
+        height: 300px;
     }
 }
 @media (max-width:1170px){
@@ -52,40 +74,60 @@
         margin: 0;
     }
 }
-@media (max-width:930px){
-    .ourprojpic{
-        display: grid;
-        grid-template-columns: auto auto    ;
-    }
-}
-@media (max-width:820px){
-    .ourprojpic{
+@media (max-width:1190px) {
+    .burgerbar{
         display: none;
     }
-        .slideshow-container{
-            display: block;
-            
 
+    .active{
+        display: block;
     }
 }
-@media (max-width:900px) {
+@media (max-width:1125px) {
+    .comppic2{
+        display: none;
+    }
+}
+
+@media (max-width:990px) {
     .navigation{
         display: none;
     }
-    .burgerbar{
+    .burgernavigation{
         display: block;
     }
-    .ul-nav{
-        flex-direction: column;
-        align-items: center;
+}
+@media (max-width:810px){
+    .mainproj{
+        flex-wrap: wrap;
+        display: flex;
+        margin: 0 auto;
     }
-    .ul-list{
-        flex-direction: column;
-        align-items:flex-end;
-        font-size: 15px;
-        
+    .mainprojimg{
+        display: flex;
+        justify-content: center;
     }
-    .active{
-        display: block;
+    .ourprojpic1{
+        max-width: 350px;
+    }
+    .ourprojpic{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width:810px){
+    .contact{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .contact{
+       max-width: 300px;
+    }
+    .contactleft{
+    width: 300px;
+    }
+    .topfooter{
+        flex-wrap: wrap;
     }
 }

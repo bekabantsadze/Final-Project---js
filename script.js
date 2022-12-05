@@ -1,11 +1,28 @@
- let navBar = document.getElementById('navigation');
- let burgerBar = document.getElementById('togglebar');
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
- 
- burgerBar.addEventListener('click', function(){
-     navBar.classList.toggle('active');
- })
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
 
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
 
  let Name = document.getElementById("Name")
  let mail = document.getElementById("mail")
@@ -80,32 +97,37 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 // ------slider------
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+let slides = document.getElementsByClassName("slider__slide");
+let navlinks = document.getElementsByClassName("slider__navlink");
+let currentSlide = 0;
+
+document.getElementById("nav-button--next").addEventListener("click", () => {
+    changeSlide(currentSlide + 1)
+});
+document.getElementById("nav-button--prev").addEventListener("click", () => {
+    changeSlide(currentSlide - 1)
+});
+
+function changeSlide(moveTo) {
+    if (moveTo >= slides.length) {moveTo = 0;}
+    if (moveTo < 0) {moveTo = slides.length - 1;}
+    
+    slides[currentSlide].classList.toggle("active");
+    navlinks[currentSlide].classList.toggle("active");
+    slides[moveTo].classList.toggle("active");
+    navlinks[moveTo].classList.toggle("active");
+    
+    currentSlide = moveTo;
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
+    bullet.addEventListener('click', () => {
+        if (currentSlide !== bulletIndex) {
+            changeSlide(bulletIndex);
+        }
+    })
+})
 
 // -------
 
