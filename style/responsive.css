@@ -130,4 +130,12 @@
     .topfooter{
         flex-wrap: wrap;
     }
+    .comptext{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:810px){
+    .bodycontainer{
+        flex-wrap: wrap
+    }
 }
