@@ -139,3 +139,65 @@
         flex-wrap: wrap
     }
 }
+@media (max-width:585px){
+    .ul-list{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width:450px){
+    .ul-list{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .compcontainer{
+        display: grid;
+        grid-template: auto;
+        width: 100%;
+        
+    }
+    .comppic3{
+        display: none;
+    }
+    .nurtownimg{
+        max-width: 300px;
+    }
+    .ourprojpic1{
+        max-width: 200px;
+        margin-top: 100px;
+    }
+    .ourproj{
+       margin-top: 200px;
+    }
+    .panel{
+        font-size: 8px;
+        flex-wrap: wrap
+    }
+    .contactimg{
+        max-width: 150px;
+    }
+    .mainlogo{
+        max-width: 70px;
+    }
+    .button{
+        max-width: 70px;
+        font-size: 8px;
+        margin-right: 15px;
+
+    }
+    .footerbottom{
+        display: none;
+    }
+    .staff-wraper{
+        margin: auto;
+    }
+  
+    .bold{
+        font-size: small;
+        font-weight: 100px;
+    }   
+    .light{
+        font-size: small;
+        font-weight: 100px;
+    }   
+}
