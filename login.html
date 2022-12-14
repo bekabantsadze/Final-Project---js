@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NURTOWN</title>
-    <link rel="icon" type="image/x-icon" href="./style/assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="./style/login.css">
-    <link rel="stylesheet" href="./style/styles.css">
-</head>
-<body class="bodycontainer">
-    <div class="login-wrap">
-        <div>
-            <div class="mainlogo">
-                <a href="index.html"><img class="mainlogo" src="./style/assets/logo.svg" alt="logo"></a>
-              </div>
-        </div>
-        <div class="login-html">
-            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
-            <div class="login-form">
-                <div class="sign-in-htm">
-                    <div class="group">
-                        <label for="user" class="label">Username</label>
-                        <input id="user" type="text" class="input">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Password</label>
-                        <input id="pass" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
-                        <input id="check" type="checkbox" class="check" checked>
-                        <label for="check"><span class="icon"></span> Keep me Signed in</label>
-                    </div>
-                    <div class="group">
-                        <input type="submit" class="button" value="Sign In">
-                    </div>
-                    <div class="hr"></div>
-                    <div class="foot-lnk">
-                        <a href="#forgot">Forgot Password?</a>
-                    </div>
-                </div>
-                <div class="sign-up-htm">
-                    <div class="group">
-                        <label for="user" class="label">Username</label>
-                        <input id="user" type="text" class="input">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Password</label>
-                        <input id="pass" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Repeat Password</label>
-                        <input id="pass" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Email Address</label>
-                        <input id="pass" type="text" class="input">
-                    </div>
-                    <div class="group">
-                        <input type="submit" class="button" value="Sign Up">
-                    </div>
-                    <div class="hr"></div>
-                    <div class="foot-lnk">
-                        <label for="tab-1">Already Member?</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>NURTOWN</title>
+    <link rel="icon" href="./style/assets/logo.svg">
+  </head>
+<body class="login-body">
+    
+    <section class="form-section"> 
+        <div class="mainlogo">
+            <a href="index.html"><img class="mainlogo" src="./style/assets/Group11.svg" alt="logo"></a>
+          </div>
 
+        <form class="form-wraper" action="" id="registration" method="POST">
+            <div class="form-container">
+                <div>
+                    <h2 class="registr-h">Registration</h2>
+                </div>
+                <div class="username-wraper">
+                    <input type="text" name="username" id="usernamefield" placeholder="Username.."
+                    />
+                    <span id="error_username"></span>
+                  </div>
+                  <div class="email-wraper">
+                    <input class="name" type="email" id="email" placeholder="email.." name="myemail">
+                    <span id="text"></span>
+                </div>
+                  <div class="password-wraper">
+                    <input class="name password-name" type="password" id="showpassword" name="passwword" placeholder="password..">
+                    <i class="fa-solid fa-eye" id="toggleIcon"></i>
+                  </div>
+                  <div >
+                    <input class="name" type="password" name="pasww2" id="passwordfield2" placeholder="Repeat Password.."/>
+                    <span class="error-text" id="error_pasww2"></span>
+                  </div>
+                 
+                  <div>
+                    <input  class="gender-alert" type="radio" name="gender" value="male" id="male" />
+                    <label  class="gender" for="male">Male</label>
+                    <input class="gender-alert" type="radio" name="gender" value="female" id="female" />
+                    <label class="gender" for="female">Female</label>
+                    <span id="error_gender"></span>
+                  </div>
+                  <div>
+                    <input class="gender-alert" type="checkbox" name="agree" id="agree" />
+                    <label class="gender" for="agree">I agree tersm and conditions</label>
+                    <span class="" id="error_agree"></span>
+                  </div>
+            </div> 
+            <div>
+                <button  class="sign-button" type="submit">sign In</button>
+              </div>
+          </form>
+    </section>
+    <script src="./login.js"></script>
 </body>
 </html>
